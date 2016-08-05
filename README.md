@@ -13,4 +13,5 @@ Assuming Cider+emacs development environment:
 * 4. Open http://localhost:8440
 * 5. Add css/scss styling in  _om-next-template/scss/style.scss_
 * 6. Realize that the backend parser and handlers are located in _om-next-template/src/clj/backend/server.clj_
+* 7. For standalone jar, delete _om-next-template/resources/public/main.js_ and this directory _om-next-template/resources/public/out_, then do these two commands `lein cljsbuild once` (for advanced compilation) and then `lein ring uberjar`.
 
