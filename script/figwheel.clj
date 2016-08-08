@@ -23,7 +23,7 @@
 
 (def sass-config
   {:executable-path "sass"
-   :input-dir "resources/scss"
+   :input-dir "scss"
    :output-dir "resources/public/css"})
 
 (defrecord Figwheel []
