@@ -4,18 +4,18 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
-  :dependencies [[org.clojure/clojure "1.9.0-alpha12"]
-                 [org.clojure/clojurescript "1.9.229"]
+  :dependencies [[org.clojure/clojure "1.9.0-alpha14"]
+                 [org.clojure/clojurescript "1.9.293"]
                  [com.cognitect/transit-clj "0.8.285"]
                  [com.cognitect/transit-cljs "0.8.239"]
                  [ring "1.5.0"]
                  [compojure "1.5.1"]
-                 [figwheel-sidecar "0.5.4-7"]
-                 [org.omcljs/om "1.0.0-alpha45"]
+                 [figwheel-sidecar "0.5.4-8"]
+                 [org.omcljs/om "1.0.0-alpha47"]
                  [com.stuartsierra/component "0.3.1"]
                  [com.cemerick/piggieback "0.2.1"]]
 
-  :plugins [[lein-cljsbuild "1.1.3"]
+  :plugins [[lein-cljsbuild "1.1.4"]
             [lein-figwheel "0.5.4-7"]
             [lein-ring "0.9.7"]]
 
@@ -37,11 +37,8 @@
      :source-paths ["src/cljs"]
      :compiler {:output-to "resources/public/main.js"
                 :output-dir "resources/public/out"
-                :source-map "resources/public/app.js.map"
                 :optimizations :advanced
-                :pretty-print false}}]}
-
-  )
+                :pretty-print false}}]})
 
 ;; Front-End Development
 ;; 1. cider-jack-in-clojurescript

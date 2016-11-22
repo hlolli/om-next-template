@@ -22,7 +22,7 @@
                 :verbose true}}]})
 
 (def sass-config
-  {:executable-path "sass"
+  {:executable-path "node-sass"
    :input-dir "scss"
    :output-dir "resources/public/css"})
 
