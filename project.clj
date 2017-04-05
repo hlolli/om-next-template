@@ -10,13 +10,13 @@
                  [com.cognitect/transit-cljs "0.8.239"]
                  [ring "1.5.0"]
                  [compojure "1.5.1"]
-                 [figwheel-sidecar "0.5.4-8"]
+                 [figwheel-sidecar "0.5.9"]
                  [org.omcljs/om "1.0.0-alpha47"]
                  [com.stuartsierra/component "0.3.1"]
                  [com.cemerick/piggieback "0.2.1"]]
 
   :plugins [[lein-cljsbuild "1.1.4"]
-            [lein-figwheel "0.5.4-7"]
+            [lein-figwheel "0.5.9"]
             [lein-ring "0.9.7"]]
 
   :ring {:handler backend.server/handler
