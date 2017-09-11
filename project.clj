@@ -5,18 +5,18 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
 
   :dependencies [[org.clojure/clojure "1.9.0-alpha15"]
-                 [org.clojure/clojurescript "1.9.521"]
+                 [org.clojure/clojurescript "1.9.908"]
                  [com.cognitect/transit-clj "0.8.300"]
                  [com.cognitect/transit-cljs "0.8.239"]
-                 [ring "1.6.0-RC3"]
-                 [compojure "1.6.0-beta3"]
-                 [figwheel-sidecar "0.5.10"]
-                 [org.omcljs/om "1.0.0-alpha48"]
-                 [com.stuartsierra/component "0.3.1"]]
+                 [ring "1.6.2"]
+                 [compojure "1.6.0"]
+                 [figwheel-sidecar "0.5.13"]
+                 [org.omcljs/om "1.0.0-beta1"]
+                 [com.stuartsierra/component "0.3.2"]]
 
-  :plugins [[lein-cljsbuild "1.1.5"]
-            [lein-figwheel "0.5.10"]
-            [lein-ring "0.11.0"]]
+  :plugins [[lein-cljsbuild "1.1.7"]
+            [lein-figwheel "0.5.13"]
+            [lein-ring "0.12.1"]]
 
   :ring {:handler backend.server/handler
          :port 8440}
@@ -25,8 +25,8 @@
 
   :source-paths ["src/cljs" "src/clj"]
 
-  :profiles {:dev {:dependencies [[com.cemerick/piggieback "0.2.1"]
-                                  [org.clojure/tools.nrepl "0.2.12"]]
+  :profiles {:dev {:dependencies [[com.cemerick/piggieback "0.2.2"]
+                                  [org.clojure/tools.nrepl "0.2.13"]]
                    :repl-options {:nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}}
              :uberjar {:aot :all}}
 
